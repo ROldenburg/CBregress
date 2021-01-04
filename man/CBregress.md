@@ -2,7 +2,7 @@ name{CBregress}
 \alias{CBregress}
 \title{Case based linear regression}
 \description{
-Fit a latent variable regression model.}
+Fit a case based latent variable regression model.}
 \usage{
 CBregress(x,y)
 }
@@ -20,6 +20,7 @@ CBregress(x,y)
   \item{v0}{The estimate for the variance of _X_}
   \item{vd}{The estimate for the error variance of _x-X_}
   \item{ve}{The estimate for the error variance of _y-(a*X+b)_}
+  \item{X0}{The vector of estimatea for the true value _X_ }
 }
 \references{
 Reinhard Oldenburg (2020). Structural Equation Modeling
