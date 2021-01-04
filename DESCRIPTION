@@ -1,0 +1,16 @@
+Package: CBregression
+Version: 0.1
+Date: 2021-01-01
+Title: Case based linear regression estimation
+Authors@R: c(person("Joe", "Developer", role = c("aut", "cre"),
+                     email = "Joe.Developer@some.domain.net"),
+              person("Pat", "Developer", role = "aut"),
+              person("A.", "User", role = "ctb",
+                     email = "A.User@whereever.net"))
+Author: Joe Developer [aut, cre],
+  Pat Developer [aut],
+  A. User [ctb]
+Maintainer: Reinhard Oldenburg <Reinhard.Oldenburg@math.uni-augsburg.de>
+Depends: R (>= 3.1.0), nloptr
+Description: The function CBregress performs a univariate linear regression according to the case based methodology. This typically results in better estimates than standard regression or orthogonal regression when both variables are measured with error. 
+License: GPL (>= 2)
