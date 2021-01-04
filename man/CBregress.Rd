@@ -26,7 +26,7 @@ CBregress(x,y)
 Reinhard Oldenburg (2020). Structural Equation Modeling
 Comparing Two Approaches. The Mathematica Journal, URL
 https://content.wolfram.com/uploads/sites/19/2020/12/Oldenburg.pdf .}
-}
+
 \examples{
 vx=c(1,2,3,4)
 vy=c(3,4,4,5)
