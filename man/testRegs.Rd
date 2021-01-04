@@ -10,12 +10,12 @@ testRegs(m,n,A,sig1,sig2,generator=runif)
 \item{m}{Number of samples that are drawn.}
 \item{n}{The size of each sample.}
 \item{A}{The true slope value.}
-\item{sig1}{Standard deviation of the measurement error for _x_.}
-\item{sig2}{Standard deviation of the measurement error for _y_.}
-\item{generator}{A function such that \code{generator(n)} gives the random vector of true values of _X_. }
+\item{sig1}{Standard deviation of the measurement error for x.}
+\item{sig2}{Standard deviation of the measurement error for y.}
+\item{generator}{A function such that \code{generator(n)} gives the random vector of true values of X. }
 }
 \details{
-    The vectors _x=X+d_ and _y=A*x+e_ are then the measured values where _d,e_ are normally distributed with mean 0 and standard deviations _sig1, sig2_.  
+    The vectors x=X+d and y=A*x+e are then the measured values where d,e are normally distributed with mean 0 and standard deviations sig1, sig2.  
     For these vectors the slope estimates by standard regression, orthogonal regression and case based latent regression are calculated. 
     }
 \value{  A vector with the standard deviations of the slope estimates of standard regression, orthogonal regression and case based latent regression in this order.
