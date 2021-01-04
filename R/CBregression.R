@@ -1,4 +1,4 @@
-# CBregression. R
+# CBregression R
 # Reinhard Oldenburg - roldenburg@gmx.de 
 # Linear Regression for the model y=a*x+b
 

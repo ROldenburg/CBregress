@@ -15,7 +15,7 @@ testRegs(m,n,A,sig1,sig2,generator=runif)
 \item{generator}{A function such that \code{generator(n)} gives the random vector of true values of X. }
 }
 \details{
-    The vectors x=X+d and y=A*x+e are then the measured values where d,e are normally distributed with mean 0 and standard deviations sig1, sig2.  
+    The vectors x=X+d and y=A*x+e are then constructed as the simulated measured values where d,e are normally distributed errors with mean 0 and standard deviations sig1, sig2.  
     For these vectors the slope estimates by standard regression, orthogonal regression and case based latent regression are calculated. 
     }
 \value{  A vector with the standard deviations of the slope estimates of standard regression, orthogonal regression and case based latent regression in this order.
@@ -27,7 +27,7 @@ testRegs(100,50,0.6,0.2,0.4);
     
 # a more ambitous use is the following simulation study
 print("Simulations with uniform distribution")
-print(c("std reg.","Ortho.","Case based"))
+print(c("Std reg.","Ortho.","Case based"))
 for(A in c(0.5,1.0,1.5)) {
   res=c(0,0,0)
   print("")

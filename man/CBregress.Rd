@@ -11,16 +11,18 @@ CBregress(x,y)
 }
 \details{
     The function \code{CBregress} performs a case based univariate linear regression, similairly to \code{lm(y~x)}.
-    In contrast to \code{lm}, the statistical model assumes and estimates a latent variable X such that x-X and y-(a*X+b) are as small errors as possible. 
+    In contrast to \code{lm}, the statistical model assumes and estimates a latent variable \eqn{X} such that \eqn{x-X} and \eqn{y-(a\cdot X+b)}{y-(a*X+b)} are as small errors as possible. 
+    
+    Case based regression is best suited for small samples which are not normally distributed and have errors in both variables. 
 }
 \value{
   A list with the following fields.
   \item{a}{The estimate for the slope parameter}
   \item{b}{The estimate for the intercept parameter}
   \item{v0}{The estimate for the variance of X}
-  \item{vd}{The estimate for the error variance of x-X_}
+  \item{vd}{The estimate for the error variance of x-X}
   \item{ve}{The estimate for the error variance of y-(a*X+b)}
-  \item{X0}{The vector of estimatea for the true value X }
+  \item{X0}{The vector of estimates for the true value X }
 }
 \references{
 Reinhard Oldenburg (2020). Structural Equation Modeling
