@@ -1,4 +1,4 @@
-name{CBregress}
+\name{CBregress}
 \alias{CBregress}
 \title{Case based linear regression}
 \description{
