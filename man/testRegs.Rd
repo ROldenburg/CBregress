@@ -22,6 +22,21 @@ testRegs(m,n,A,sig1,sig2,generator=runif)
 }
 
 \examples{
-testRegs(100,50,0.6,0.2,0.4)
+testRegs(100,50,0.6,0.2,0.4);
 # this prints standard deviations of errors, e.g. 0.4014260 0.3478160 0.2742257 which shows that in this sampling CBregress performed best
+    
+# a more ambitous use is the following simulation study
+print("Simulations with uniform distribution")
+print(c("std reg.","Ortho.","Case based"))
+for(A in c(0.5,1.0,1.5)) {
+  res=c(0,0,0)
+  print("")
+  print(paste("Data simulation for a=",toString(A)))
+  for(sigx in c(0.2,0.4)) for(sigy in c(0.2,0.4)) {
+    print(paste("sig error x=",toString(sigx),"sig error y=",toString(sigy)))
+    res=res+testRegs(10,100,A,sigx,sigy,generator=runif)
+  } 
+  print(c("Total errors",sqrt(res/4)))
+}
+    
 }
