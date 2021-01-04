@@ -9,10 +9,10 @@ orthoreg(x,y)
 \item{x,y}{Numeric vectors of equal length.}
 }
 \details{
-    The function \code{orthoreg} performs an orthogonal linear regression. The model equation is _y=a*x+b_ 
+    The function \code{orthoreg} performs an orthogonal linear regression. The model equation is y=a*x+b 
 }
 \value{
-  A vector with the estimates for _a_ and _b_. 
+  A vector with the estimates for a and b. 
   }
 
 \examples{
