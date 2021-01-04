@@ -1,0 +1,4 @@
+importFrom("nloptr","nloptr")
+importFrom("stats", "cov", "rnorm", "var")
+importFrom("stats", "runif")           
+export("orthoreg","CBregress","testRegs")
